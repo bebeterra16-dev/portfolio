@@ -1,4 +1,4 @@
-const elemProjects = document.getElementById('project_content')
+const elemProjects = document.getElementById('project__content')
 
 const createImage = (projectImage, projectName) => {
   const elemPicture = document.createElement('picture')

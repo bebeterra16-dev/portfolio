@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roberto Costa</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/global.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="./styles/global.css">
 
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Script AOS - Animações -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Primary Meta Tags -->
+  <title>Roberto Costa - Portfólio</title>
+  <meta name="title" content="Roberto Costa - Portfólio" />
+  <meta name="description" content="Apaixonado pelo universo da programação, atualmente estou focado em aprimorar meus conhecimentos na área do frontend. Um dos motivos pelos quais escolhi o ramo da programação é a oportunidade de criar projetos que possam beneficiar a vida das pessoas por meio da tecnologia." />
+
+  <!--
+  FACEBOOK
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portfolio-leonardovargas.netlify.app/" />
+  <meta property="og:title" content="Roberto Costa - Portfólio" />
+  <meta property="og:description" content="Apaixonado pelo universo da programação, atualmente estou focado em aprimorar meus conhecimentos na área do frontend com React e NextJS. Um dos motivos pelos quais escolhi o ramo da programação é a oportunidade de criar projetos que possam beneficiar a vida das pessoas por meio da tecnologia." />
+  <meta property="og:image" content="https://portfolio-leonardovargas.netlify.app/assets/eu.jpeg" />
+    -->
+  
 </head>
 <body>
-    <div class="app">
+  <div class="app">
 
-        <section class="card user">
-            <picture>
-                <img src="./Assets/eu.png" alt="Foto de Perfil">
-            </picture>
-            
-            <div class="user_content">
-                <h1>Roberto Costa</h1>
-                <p>Desenvolvedor Frontend</p>
+    <section 
+      class="card user" 
+      data-aos="fade-right"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+    >
+      <picture>
+        <img src="./assets/eu.png" alt="">
+      </picture>
 
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/roberto-costa-38049754/" class="social_link" target="_blank"><!--target="_blank" abrir em outra aba-->
-                        <i class="ph ph-linkedin-logo"></i>
-                    </a>
+      <div class="user__content">
+        <h1>Roberto Costa</h1>
 
-                    <a href="https://www.instagram.com/roberttoo_jj_1993/" class="social_link" target="_blank"><!--target="_blank" abrir em outra aba-->
-                        <i class="ph ph-instagram-logo"></i>
-                    </a>
+        <p>Tecnologia da informação</p>
 
-                    <a href="https://github.com/bebeterra16-dev" class="social_link" target="_blank"><!--target="_blank" abrir em outra aba-->
-                        <i class="ph ph-github-logo"></i>
-                    </a>
+        <div class="social">
+          <a title="link para a rede social linkedin" aria-label="link para a rede social linkedin" href="https://www.linkedin.com/in/roberto-costa-38049754/" class="social__link" target="_blank">
+            <i class="ph ph-linkedin-logo"></i>
+          </a>
 
-                </div>
+          <a title="link para a rede social github" aria-label="link para a rede social github" href="https://github.com/bebeterra16-dev" class="social__link" target="_blank">
+            <i class="ph ph-github-logo"></i>
+          </a>
 
-            </div>
+          <a title="link para a rede social instagram" aria-label="link para a rede social instagram" href="https://www.instagram.com/roberttoo_jj_1993/" class="social__link" target="_blank">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
 
-        </section>
-        
-        <section class="card about">
-            <h2 class="subtitle">Sobre</h2>
-            <p>
-                Apaixonado pelo universo da programação, atualmente estou focado em aprender 
-                conhecimentos na área do frontend com React e NextJS. Um dos motivos pelos quais 
-                escolhi aprender o ramo da programação é a oportunidade de criar projetos que possam 
-                mudar a vida das pessoas por meio da tecnologia.
-            </p>
+        </div>
+      </div>
+    </section>
 
-            <p>
-                Sempre disposto a explorar e aprender coisas novas e expandir horizontes...
+    <section
+      class="card about"
+      data-aos="fade-left"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+    >
+      <h2 class="subtitle">Sobre</h2>
 
-            </p>
-        </section>
-                
-        <section class="card projects">
-            <h2 class="subtitle">Projetos</h2>
+      <p>
+        Apaixonado em entregar soluções para pessoas, e vivenciar as melhorias que a tecnologia podem trazer para as vidas.
+        Atualmente estou vivendo uma fase de evolução contínua na minha carreira. Tenho uma base sólida em suporte técnico 
+        ao cliente, redes e computadores e decidi expandir meus horizontes, hoje quero unir a experiência prática de infraestrutura
+        com a visão estratégica da gestão e o poder da programação.
+        Minha trajetória na TI me proporcionou habilidades críticas em resolução de problemas, liderança e resiliência.
+        Aprendi a garantir a estabilidade de ambientes complexos e a manter o foco sob pressão suportando e delegando com sabedoria
+        tarefas em equipe.
+      </p>
 
-            <div id ="project_content">
-                
-            </div>
-        </section>
-        
-    </div>   
+      <p><strong>Sempre disposto a explorar novos horizontes, hoje estou aprendendo sobre essa area maravilhosa que é a programação, 
+        e esse é o meu primeiro Portfólio programado por mim com aulas e tutoriais.</strong> 
+      </p>
+    </section>
 
-    <script src="./scripts/index.js"></script>
+    <section class="card projects"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+    >
+      <h2 class="subtitle">Projetos</h2>
+
+      <div id="project__content">
+      </div>
+    </section>
+
+  </div>
+
+  <script src="./scripts/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ once: true })
+  </script>
+
 </body>
 </html>

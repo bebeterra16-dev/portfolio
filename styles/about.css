@@ -1,11 +1,30 @@
-.about{
-    padding: 32px;
+.about {
+  padding: 32px;
 }
-.about p{
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: 300;
 
-    margin-top: 12px;
-    
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+
+  margin-top: 12px;
+}
+
+.about p a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.about p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+  .about {
+    padding: 24px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
 }
