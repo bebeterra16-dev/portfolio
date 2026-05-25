@@ -14,17 +14,18 @@ const createImage = (projectImage, projectName) => {
 
 const createStrong = (projectName) => {
   const elemStrong = document.createElement('strong')
-  elemStrong.innerText = projectName
+  elemStrong.textContent = projectName
 
   return elemStrong
 }
 
 const createTags = (projectTags) => {
   const elemTags = document.createElement('div')
+  elemTags.classList.add('project__tags')
 
   projectTags.forEach(tag => {
     const elemTag = document.createElement('span')
-    elemTag.innerText = tag
+    elemTag.textContent = tag
 
     elemTags.appendChild(elemTag)
   })
@@ -59,9 +60,17 @@ const createProject = (project, index) => {
 }
 
 const loadProjects = (projects) => {
+  const fragment = document.createDocumentFragment()
   projects.forEach((project, index) => {
-    elemProjects.appendChild(createProject(project, index))
+    fragment.appendChild(createProject(project, index))
   });
+  elemProjects.appendChild(fragment)
 }
 
-fetch('./projects.json').then(response => response.json()).then(loadProjects)
+fetch('./projects.json')
+  .then(response => {
+    if (!response.ok) throw new Error('Erro ao carregar projetos')
+    return response.json()
+  })
+  .then(loadProjects)
+  .catch(error => console.error('Erro:', error))

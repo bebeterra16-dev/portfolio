@@ -1,0 +1,16 @@
+.button-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0077b5; /* Cor exemplo */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 15px 0;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.button-cv:hover {
+  background-color: #005a87;
+}
