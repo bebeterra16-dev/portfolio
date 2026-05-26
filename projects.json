@@ -5,13 +5,13 @@
     "tags": ["Prompt", "IA", "CSS", "UI/UX"],
     "link": "https://todosantodia.app/onboarding"
   },
-	{
+  {
     "name": "Em Breve",
     "image": "./assets/em produção.png",
     "tags": ["", "", ""],
     "link": "#"
   },
-	{
+  {
     "name": "Em Breve",
     "image": "./assets/em produção.png",
     "tags": ["", "", ""],
@@ -38,5 +38,4 @@
     "tags": ["", "", ""],
     "link": "#"
   }
-
 ]
